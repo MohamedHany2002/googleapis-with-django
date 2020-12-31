@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    authed
+    {{user}} userusr <br>
+    {%for user in users%}
+    user {{user}} .. email {{user.email}} .. username {{user.username}} .. title {{user.title_job}}
+    <br>
+    {{user.is_staff}} is staff
+    <br>
+    phone{{user.phone }} crreated {{user.date_joined}} .. status {%if user.status == "active" %}نشط{%endif%} .. is_owner {{user.is_owner}} 
+    {%endfor%}
+</body>
+</html>

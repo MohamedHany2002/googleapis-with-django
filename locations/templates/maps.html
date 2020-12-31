@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        #map{
+            height: 450px;
+            width: 100%;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+<body>
+    held
+    <iframe width="=600" height="500" style="border:0;width: 100%;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5-fI4WzDqXVi3sAsBC6y2paYzlhmPp54&q=egypt" frameborder="0" allowfullscreen></iframe>
+<div id="map"></div>
+    <script>
+        console.log('sdfsf')
+        var map;
+        function initMap(){
+            console.log('hello maps')
+            map = new google.maps.Map(document.getElementById('map'),{
+                center:{lat: 26.820578,lng: 30.801466},
+                zoom:15
+            });
+        }
+    </script> 
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmHcdVrdypQtyuZgTR9pmjzhe-zgaVKa0&callback=initMap">
+</script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5-fI4WzDqXVi3sAsBC6y2paYzlhmPp54&callback=initMap" ></script> -->
+</body>
+</html>
